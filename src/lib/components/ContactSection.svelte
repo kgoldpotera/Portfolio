@@ -16,7 +16,7 @@
 			label: 'E-mail',
 			icon: '/gmail.svg',
 			href: 'mailto:koechmanoah32@gmail.com',
-			newTab: false
+			newTab: true
 		}
 	];
 </script>
