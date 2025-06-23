@@ -62,4 +62,13 @@
 		height: 2px;
 		background-color: #00e0b8;
 	}
+
+	@media (max-width: 768px) {
+		/* CSS rules for screens 768px wide or narrower */
+		.nav-links {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
 </style>
