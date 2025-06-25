@@ -1,6 +1,7 @@
 <section class="hero">
 	<div class="hero-left">
 		<div class="code-box">
+			<img class="my-img" src="/Manoah.jpg" alt="Picture of Manoah The Goat." />
 			<span class="code-icon">&lt;/&gt;</span>
 		</div>
 	</div>
@@ -78,5 +79,10 @@
 	.icons img {
 		width: 32px;
 		height: 32px;
+	}
+	.my-img {
+		width: 150px;
+		height: 150px;
+		border-radius: 4px;
 	}
 </style>
