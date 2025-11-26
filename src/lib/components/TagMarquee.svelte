@@ -1,19 +1,19 @@
 <script>
 	export let tags = [
-		'WEB',
-		'PROGRAMMING',
-		'DEVELOPMENT',
+		'SVELTEKIT',
+		'TYPESCRIPT',
+		'TAILWIND CSS',
 		'JAVASCRIPT',
-		'CSS',
+		'HTML5',
+		'CSS3',
 		'FIGMA',
 		'GIT',
-		'HTML',
-		'DRIBBBLE',
-		'BEHANCE',
-		'TAILWIND',
-		'SVELTE',
-		'REACT',
-		'NODE.JS'
+		'DEXIE.JS',
+		'SUPABASE',
+		'D3.JS',
+		'CAPACITOR',
+		'TAURI',
+		'RESPONSIVE DESIGN'
 	];
 </script>
 
@@ -24,7 +24,6 @@
 				<div class="tag">{tag}</div>
 			{/each}
 		</div>
-		<!-- Duplicate for seamless looping -->
 		<div class="tag-list">
 			{#each tags as tag, i (tag + '-copy')}
 				<div class="tag">{tag}</div>
@@ -78,14 +77,28 @@
 		color: #e5e7eb;
 		text-transform: uppercase;
 		white-space: nowrap;
-		transition:
-			background 0.3s,
-			color 0.3s;
+		transition: background 0.3s, color 0.3s;
 	}
 
 	.tag:hover {
 		background: rgba(0, 224, 184, 0.1);
 		color: #00e0b8;
 		cursor: pointer;
+	}
+
+	@media (max-width: 768px) {
+		.tag-marquee {
+			padding: 0.75rem 0;
+		}
+
+		.tag {
+			padding: 0.4rem 0.8rem;
+			font-size: 0.75rem;
+		}
+
+		.tag-list {
+			gap: 0.75rem;
+			padding: 0 1rem;
+		}
 	}
 </style>

@@ -7,26 +7,25 @@
 <nav class="navbar">
 	<div class="logo">Manoah<span>/</span></div>
 
-	<!-- Toggle Button (Hamburger) -->
 	{#if !isOpen}
-		<div class="hamburger" on:click={toggleMenu}>
+		<button class="hamburger" on:click={toggleMenu} aria-label="Open navigation menu">
 			<div></div>
 			<div></div>
 			<div></div>
-		</div>
+		</button>
 	{:else}
-		<!-- Dropdown links positioned top-right where hamburger was -->
 		<ul class="nav-links mobile">
 			<li><a href="#about" on:click={closeMenu}>About</a></li>
+			<li><a href="#skills" on:click={closeMenu}>Skills</a></li>
 			<li><a href="#experience" on:click={closeMenu}>Experience</a></li>
 			<li><a href="#projects" on:click={closeMenu}>Projects</a></li>
 			<li><a href="#contact" on:click={closeMenu}>Contact</a></li>
 		</ul>
 	{/if}
 
-	<!-- Desktop nav -->
 	<ul class="nav-links desktop">
 		<li><a href="#about" class="active">About</a></li>
+		<li><a href="#skills">Skills</a></li>
 		<li><a href="#experience">Experience</a></li>
 		<li><a href="#projects">Projects</a></li>
 		<li><a href="#contact">Contact</a></li>
@@ -44,7 +43,6 @@
 		z-index: 100;
 	}
 
-	/* Logo */
 	.logo {
 		font-size: 1.5rem;
 		font-weight: bold;
@@ -54,7 +52,16 @@
 		color: #00e0b8;
 	}
 
-	/* Hamburger icon */
+	@media (max-width: 768px) {
+		.navbar {
+			padding: 1.25rem 1.5rem;
+		}
+
+		.logo {
+			font-size: 1.25rem;
+		}
+	}
+
 	.hamburger {
 		display: none;
 		flex-direction: column;
@@ -62,14 +69,17 @@
 		width: 24px;
 		height: 18px;
 		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
 	}
 	.hamburger div {
 		height: 3px;
 		background-color: white;
 		border-radius: 1px;
+		width: 100%;
 	}
 
-	/* Desktop links */
 	.nav-links.desktop {
 		display: flex;
 		gap: 2rem;
@@ -92,7 +102,6 @@
 		background-color: #00e0b8;
 	}
 
-	/* Mobile links (dropdown) */
 	.nav-links.mobile {
 		top: 1.5rem;
 		right: 2rem;
@@ -118,7 +127,6 @@
 		color: #00e0b8;
 	}
 
-	/* Responsive */
 	@media (max-width: 768px) {
 		.hamburger {
 			display: flex;

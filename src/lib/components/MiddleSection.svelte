@@ -1,15 +1,16 @@
 <section class="hero">
 	<div class="hero-left">
 		<div class="code-box">
-			<img class="my-img" src="/Manoah.jpg" alt="Picture of Manoah The Goat." />
+			<img class="my-img" src="/Manoah.jpg" alt="Manoah Kipngeno" />
 			<span class="code-icon">&lt;/&gt;</span>
 		</div>
 	</div>
 	<div class="hero-right">
 		<h1>
-			Hi, I’m <span class="name">Manoah<span class="accent">.</span></span><br />
-			<span class="title">Frontend Dev</span>
+			Hi, I'm <span class="name">Manoah Kipngeno<span class="accent">.</span></span><br />
+			<span class="title">Frontend Developer</span>
 		</h1>
+		<p class="location">Nairobi, Kenya</p>
 		<div class="icons">
 			<img src="/html-5-logo.svg" alt="HTML5" />
 			<img src="/css-3-logo.svg" alt="CSS3" />
@@ -28,6 +29,14 @@
 		color: #fff;
 		gap: 3rem;
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 2rem 1rem;
+			gap: 2rem;
+			flex-direction: column;
+		}
 	}
 
 	.hero-left .code-box {
@@ -56,6 +65,13 @@
 		margin: 0;
 	}
 
+	@media (max-width: 768px) {
+		.hero-right h1 {
+			font-size: 1.75rem;
+			text-align: center;
+		}
+	}
+
 	.name {
 		font-weight: bold;
 	}
@@ -80,9 +96,26 @@
 		width: 32px;
 		height: 32px;
 	}
+
 	.my-img {
 		width: 150px;
 		height: 150px;
 		border-radius: 4px;
+	}
+
+	.location {
+		color: #94a3b8;
+		margin-top: 0.5rem;
+		font-size: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.location {
+			text-align: center;
+		}
+
+		.icons {
+			justify-content: center;
+		}
 	}
 </style>

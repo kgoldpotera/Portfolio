@@ -1,52 +1,31 @@
 <script>
-	// You can later make this dynamic by using a list of job entries
 </script>
 
 <section id="experience" class="experience-section">
 	<h2 class="title">Experience<span class="accent">.</span></h2>
 
 	<div class="experience-item">
-		<p class="duration">Dec 2022–</p>
-		<h3 class="role">
-			University | Kenyatta University <a href="#" target="_blank" rel="noopener noreferrer">↗</a>
-		</h3>
+		<p class="duration">May 2025 – July 2025</p>
+		<h3 class="role">Frontend Developer Intern | Drug Index (HealthTech Startup)</h3>
 		<p class="description">
-			Following my time at Alliance High School, I enrolled at Kenyatta University to pursue a
-			<b>Bachelor of Science in Telecommunication and Information Technology</b>. It was during this
-			phase that I discovered my passion for programming and began exploring web technologies in
-			depth. Currently, I’m on industrial attachment at <b>DrugIndex.it</b>, where I contribute to
-			the development and maintenance of the DrugIndex web application—an innovative platform
-			focused on organizing and delivering pharmaceutical data efficiently. This hands-on experience
-			has sharpened my technical skills and strengthened my commitment to building impactful digital
-			solutions.
+			Built the <strong>Brand PriceChart module</strong> using SvelteKit and D3.js, creating interactive line graphs to visualize historical drug pricing trends. Configured and managed build pipelines for <strong>Tauri (Windows/macOS)</strong> and <strong>Capacitor (Android/iOS)</strong> for native deployment.
+		</p>
+		<p class="description">
+			Enhanced platform <strong>accessibility</strong> with ARIA labels and keyboard navigation. Standardized design system by implementing unified button classes and refactoring Admin Sidebar to match modern UI aesthetics.
+		</p>
+		<p class="description">
+			Conducted rigorous QA testing using Linear for issue tracking, resolving bugs related to session management, light/dark mode, and mobile responsiveness.
 		</p>
 	</div>
 
 	<div class="experience-item">
-		<p class="duration">Feb 2018–Apr 2022</p>
-		<h3 class="role">
-			Highschool | Alliance Highschool <a href="#" target="_blank" rel="noopener noreferrer">↗</a>
-		</h3>
+		<p class="duration">Jan 2024 – Present</p>
+		<h3 class="role">Freelance Web Developer</h3>
 		<p class="description">
-			After graduating from Chelsa Academy, I was admitted to Alliance High School—one of Kenya’s
-			most prestigious national schools. My time at Alliance was transformative, both academically
-			and personally. Surrounded by a culture of excellence and high expectations, I deepened my
-			interests in science, leadership, and problem-solving. I completed my KCSE with a strong B+
-			grade, a reflection of consistent effort, growth, and resilience throughout my secondary
-			education.
+			Developed custom, responsive websites for clients using HTML, CSS, and JavaScript, ensuring 100% mobile compatibility. Translated client requirements into functional user interfaces with fast load times and SEO best practices.
 		</p>
-	</div>
-
-	<div class="experience-item">
-		<p class="duration">Aug 2009–Dec 2017</p>
-		<h3 class="role">
-			Primary School | Chelsa Academy<a href="#" target="_blank" rel="noopener noreferrer">↗</a>
-		</h3>
 		<p class="description">
-			I joined Chelsa Academy in 2009 and completed my primary education there in December 2017.
-			During my time at Chelsa, I developed a strong academic foundation and a passion for learning.
-			I sat for the KCPE exams in 2017 and scored 427 marks, a result that reflected years of
-			dedication, discipline, and support from my teachers and family.
+			Managed deployment and hosting configurations to ensure high uptime for client portfolios.
 		</p>
 	</div>
 </section>
@@ -89,15 +68,29 @@
 		gap: 0.25rem;
 	}
 
-	.role a {
-		color: #00e0b8;
-		text-decoration: none;
-		font-size: 1rem;
-	}
-
 	.description {
 		color: #c9d1d9;
 		line-height: 1.6;
 		max-width: 800px;
+		margin-bottom: 0.5rem;
+	}
+
+	@media (max-width: 768px) {
+		.experience-section {
+			padding: 3rem 1.5rem;
+		}
+
+		.title {
+			font-size: 2rem;
+		}
+
+		.role {
+			font-size: 1.1rem;
+			flex-wrap: wrap;
+		}
+
+		.description {
+			font-size: 0.95rem;
+		}
 	}
 </style>

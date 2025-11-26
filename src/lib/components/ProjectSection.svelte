@@ -1,5 +1,4 @@
 <script>
-	// Optional: Can later use an array of project objects
 </script>
 
 <section id="projects" class="project-section">
@@ -7,34 +6,31 @@
 
 	<div class="project-item">
 		<h3 class="project-title">
-			Awesome Portfolio <a href="#" target="_blank" rel="noopener noreferrer">↗</a>
+			Komuche (Kenyan Style) <a href="https://komuche-kenyan-style.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
 		</h3>
-		<p class="tech-stack">Svelte • Tailwind • TypeScript</p>
+		<p class="tech-stack">SvelteKit • Tailwind CSS • AI Integration • Vercel</p>
 		<p class="description">
-			A responsive portfolio website showcasing developer skills and projects. Built with SvelteKit
-			and styled using Tailwind CSS. It supports smooth scroll navigation and reusable components.
+			AI-powered e-commerce platform tailored for the Kenyan fashion market with responsive mobile design. Engineered a built-in <strong>Virtual Stylist</strong> feature utilizing AI to provide real-time, personalized outfit recommendations. Implemented seamless shopping experience with optimized product filtering and fast page loads.
 		</p>
 	</div>
 
 	<div class="project-item">
 		<h3 class="project-title">
-			Task Manager App <a href="#" target="_blank" rel="noopener noreferrer">↗</a>
+			Dynamic Weather App <a href="https://my-weather-app-zeta-three.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
 		</h3>
-		<p class="tech-stack">React • Firebase • CSS Modules</p>
+		<p class="tech-stack">JavaScript • REST API • CSS</p>
 		<p class="description">
-			A simple productivity web app allowing users to manage tasks and set reminders. Features user
-			authentication, real-time syncing with Firebase, and a clean UI.
+			Location-based weather application that fetches real-time meteorological data via API. Implemented <strong>conditional UI logic</strong> to dynamically change background theme based on user's location and current weather conditions. Demonstrated mastery of asynchronous JavaScript (Promises/Async-Await) and DOM manipulation.
 		</p>
 	</div>
 
 	<div class="project-item">
 		<h3 class="project-title">
-			Markdown Blog Engine <a href="#" target="_blank" rel="noopener noreferrer">↗</a>
+			Personal Portfolio <a href="https://myportfolio-six-taupe-30.vercel.app/" target="_blank" rel="noopener noreferrer">↗</a>
 		</h3>
-		<p class="tech-stack">Node.js • Express • EJS</p>
+		<p class="tech-stack">SvelteKit • Vercel • CSS</p>
 		<p class="description">
-			A minimal blog engine built with Node.js and Express. Supports markdown rendering, blog post
-			routing, and dynamic content updates with EJS templating.
+			Designed and deployed a personal portfolio to showcase development skills and case studies. Implemented clean, component-driven architecture to demonstrate mastery of SvelteKit routing and layout systems.
 		</p>
 	</div>
 </section>
@@ -87,5 +83,24 @@
 		color: #c9d1d9;
 		line-height: 1.6;
 		max-width: 800px;
+	}
+
+	@media (max-width: 768px) {
+		.project-section {
+			padding: 3rem 1.5rem;
+		}
+
+		.title {
+			font-size: 2rem;
+		}
+
+		.project-title {
+			font-size: 1.1rem;
+			flex-wrap: wrap;
+		}
+
+		.description {
+			font-size: 0.95rem;
+		}
 	}
 </style>
